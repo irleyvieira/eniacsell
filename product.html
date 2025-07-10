@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Pro M3 - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1> <a href="index.html"><img src="image-removebg-preview.png" id="logo-eniac"></a></h1>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Início</a></li>
+                        <li><a href="#products" class="nav-link active">Produtos</a></li>
+                        <li><a href="#categories" class="nav-link">Categorias</a></li>
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#contact" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar produtos..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="user-btn"><i class="fas fa-user"></i></button>
+                    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Início</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <a href="#laptops">Laptops</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <span class="breadcrumb-current">MacBook Pro M3</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&h=600&fit=crop" alt="MacBook Pro M3" id="main-product-image">
+                        <div class="image-zoom-indicator">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=100&h=100&fit=crop" alt="Vista frontal">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=100&h=100&fit=crop" alt="Vista lateral">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=100&h=100&fit=crop" alt="Vista aberta">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=100&h=100&fit=crop" alt="Vista traseira">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-section">
+                    <div class="product-badges">
+                        <span class="badge badge-new">Novo</span>
+                        <span class="badge badge-bestseller">Mais Vendido</span>
+                    </div>
+                    
+                    <h1 class="product-title">MacBook Pro 14" com chip M3</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">4.9 (127 avaliações)</span>
+                    </div>
+
+                    <div class="product-price-section">
+                        <div class="price-main">
+                            <span class="price-current">R$ 12.999,00</span>
+                            <span class="price-original">R$ 14.999,00</span>
+                        </div>
+                        <div class="price-installments">
+                            <span>ou 12x de R$ 1.083,25 sem juros</span>
+                        </div>
+                        <div class="price-savings">
+                            <span class="savings-badge">Economize R$ 2.000,00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-description">
+                        <p>O MacBook Pro de 14 polegadas com chip M3 oferece desempenho excepcional para profissionais criativos e desenvolvedores. Com sua tela Liquid Retina XDR e até 22 horas de bateria, é a escolha perfeita para quem busca produtividade e portabilidade.</p>
+                    </div>
+
+                    <!-- Product Options -->
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label class="option-label">Configuração:</label>
+                            <div class="option-buttons">
+                                <button class="option-btn active" data-option="8gb-512gb">8GB RAM + 512GB SSD</button>
+                                <button class="option-btn" data-option="16gb-1tb">16GB RAM + 1TB SSD</button>
+                                <button class="option-btn" data-option="32gb-2tb">32GB RAM + 2TB SSD</button>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="option-label">Cor:</label>
+                            <div class="color-options">
+                                <button class="color-option active" data-color="space-gray" style="background-color: #5a5a5a;"></button>
+                                <button class="color-option" data-color="silver" style="background-color: #e8e8e8;"></button>
+                                <button class="color-option" data-color="space-black" style="background-color: #1a1a1a;"></button>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="option-label">Quantidade:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <input type="number" value="1" min="1" max="10" class="quantity-input" id="product-quantity">
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Actions -->
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-large add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                        <button class="btn btn-secondary btn-large buy-now-btn">
+                            <i class="fas fa-bolt"></i>
+                            Comprar Agora
+                        </button>
+                        <button class="btn-wishlist-large">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <strong>Frete Grátis</strong>
+                                <span>Para todo o Brasil</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Garantia</strong>
+                                <span>1 ano de garantia oficial</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <div>
+                                <strong>Troca Fácil</strong>
+                                <span>30 dias para trocar</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-credit-card"></i>
+                            <div>
+                                <strong>Pagamento</strong>
+                                <span>Cartão, PIX ou boleto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="specifications">Especificações</button>
+                <button class="tab-btn" data-tab="reviews">Avaliações</button>
+                <button class="tab-btn" data-tab="shipping">Entrega</button>
+                <button class="tab-btn" data-tab="warranty">Garantia</button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-panel active" id="specifications">
+                    <div class="specifications-grid">
+                        <div class="spec-group">
+                            <h4>Processador</h4>
+                            <ul>
+                                <li>Chip Apple M3 com CPU de 8 núcleos</li>
+                                <li>GPU de 10 núcleos</li>
+                                <li>Neural Engine de 16 núcleos</li>
+                            </ul>
+                        </div>
+                        <div class="spec-group">
+                            <h4>Memória e Armazenamento</h4>
+                            <ul>
+                                <li>8GB de memória unificada</li>
+                                <li>SSD de 512GB</li>
+                                <li>Configurável até 32GB e 2TB</li>
+                            </ul>
+                        </div>
+                        <div class="spec-group">
+                            <h4>Tela</h4>
+                            <ul>
+                                <li>Tela Liquid Retina XDR de 14,2"</li>
+                                <li>Resolução 3024 x 1964 pixels</li>
+                                <li>ProMotion até 120Hz</li>
+                                <li>1000 nits de brilho sustentado</li>
+                            </ul>
+                        </div>
+                        <div class="spec-group">
+                            <h4>Conectividade</h4>
+                            <ul>
+                                <li>3x Thunderbolt 4 (USB-C)</li>
+                                <li>1x HDMI</li>
+                                <li>1x Slot para cartão SDXC</li>
+                                <li>1x Entrada para fones de ouvido</li>
+                                <li>Wi-Fi 6E e Bluetooth 5.3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="reviews">
+                    <div class="reviews-summary">
+                        <div class="rating-overview">
+                            <div class="rating-score">4.9</div>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="rating-count">127 avaliações</div>
+                        </div>
+                        <div class="rating-breakdown">
+                            <div class="rating-bar">
+                                <span>5 estrelas</span>
+                                <div class="bar"><div class="fill" style="width: 85%"></div></div>
+                                <span>85%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>4 estrelas</span>
+                                <div class="bar"><div class="fill" style="width: 12%"></div></div>
+                                <span>12%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>3 estrelas</span>
+                                <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                                <span>2%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>2 estrelas</span>
+                                <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                <span>1%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>1 estrela</span>
+                                <div class="bar"><div class="fill" style="width: 0%"></div></div>
+                                <span>0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <strong>Carlos Silva</strong>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">15 de dezembro, 2024</span>
+                            </div>
+                            <p class="review-text">Excelente notebook! A performance é impressionante e a tela é simplesmente linda. Recomendo para qualquer profissional que trabalhe com design ou desenvolvimento.</p>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <strong>Ana Costa</strong>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">10 de dezembro, 2024</span>
+                            </div>
+                            <p class="review-text">Produto chegou rapidamente e muito bem embalado. A qualidade de construção é excepcional e a bateria dura o dia todo. Muito satisfeita com a compra!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="shipping">
+                    <div class="shipping-info">
+                        <h4>Opções de Entrega</h4>
+                        <div class="shipping-options">
+                            <div class="shipping-option">
+                                <div class="shipping-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="shipping-details">
+                                    <strong>Entrega Padrão</strong>
+                                    <p>5-7 dias úteis - Grátis</p>
+                                </div>
+                            </div>
+                            <div class="shipping-option">
+                                <div class="shipping-icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <div class="shipping-details">
+                                    <strong>Entrega Expressa</strong>
+                                    <p>2-3 dias úteis - R$ 29,90</p>
+                                </div>
+                            </div>
+                            <div class="shipping-option">
+                                <div class="shipping-icon">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <div class="shipping-details">
+                                    <strong>Retirada na Loja</strong>
+                                    <p>Disponível em 2 horas - Grátis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="warranty">
+                    <div class="warranty-info">
+                        <h4>Garantia e Suporte</h4>
+                        <ul>
+                            <li>1 ano de garantia limitada da Apple</li>
+                            <li>Suporte técnico gratuito por 90 dias</li>
+                            <li>Opção de AppleCare+ disponível</li>
+                            <li>Rede autorizada em todo o Brasil</li>
+                            <li>Política de troca de 30 dias</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Produtos Relacionados</h2>
+            <div class="products-grid">
+                <!-- Related products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechStore</h3>
+                    <p>Sua loja de tecnologia de confiança com os melhores produtos e preços do mercado.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Gaming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Política de Troca</a></li>
+                        <li><a href="#">Garantia</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                        <li><a href="#">Investidores</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Carrinho de Compras</h3>
+            <button class="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: R$ <span id="cart-total">0,00</span></span>
+            </div>
+            <button class="btn btn-primary btn-full">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
+
